@@ -1,0 +1,23 @@
+
+JWT is a standerd to share the information between two entities(Client and Server)
+JSON Web Tokens are used to identify an authenticated user, they are issued by
+the server when the user is authenticated for the first time. 
+
+The structure of JWT
+ : JWT contains three parts
+    1. Header
+       : This is the algorithm that we select to encrypt the information
+         stored in token.
+    2. Payload
+       : This stores the claim information that is used to anytime identify 
+         the claim.
+    3. Signature
+       : This is the unique Id generated to validate the authorize user to 
+         provide the access.
+
+Benefits of JWT 
+ : 1. It is highly secured mechanism to protect the Web Api from an unauthorized
+      access.
+   2. Saves the database space as it is stored on the client only.
+   3. JWT is stateless as the user state is never saved in database, so 
+      it doesn’t require a database lookup.
